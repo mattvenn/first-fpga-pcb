@@ -19,7 +19,6 @@
 # Todo
 
 * double check FPGA pinout against lattice docs 
-* pick FLASH mem part
 
 # Inspiration
 
