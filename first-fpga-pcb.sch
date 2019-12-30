@@ -216,7 +216,7 @@ U 1 1 5E0E5F13
 P 7050 8200
 F 0 "TP1" V 7050 8600 50  0000 C CNN
 F 1 "gbin5" V 7050 8850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7250 8200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7250 8200 50  0001 C CNN
 F 3 "~" H 7250 8200 50  0001 C CNN
 	1    7050 8200
 	0    -1   -1   0   
@@ -227,7 +227,7 @@ U 1 1 5E0E740B
 P 7050 8300
 F 0 "TP2" V 7050 8700 50  0000 C CNN
 F 1 "gbin4" V 7050 8950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7250 8300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7250 8300 50  0001 C CNN
 F 3 "~" H 7250 8300 50  0001 C CNN
 	1    7050 8300
 	0    -1   -1   0   
@@ -465,12 +465,12 @@ F 3 "" H 10700 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 1450 10700 1500
+	10700 1450 10700 1550
 $Comp
 L Device:D D2
 U 1 1 5E125C1B
 P 10700 1300
-F 0 "D2" H 10850 1500 50  0000 C CNN
+F 0 "D2" H 10700 1550 50  0000 C CNN
 F 1 "D" H 10700 1175 50  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 10700 1300 50  0001 C CNN
 F 3 "~" H 10700 1300 50  0001 C CNN
@@ -486,7 +486,7 @@ U 1 1 5E1FAEBA
 P 7050 9400
 F 0 "TP3" V 7050 9800 50  0000 C CNN
 F 1 "cbsel0" V 7050 10050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7250 9400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7250 9400 50  0001 C CNN
 F 3 "~" H 7250 9400 50  0001 C CNN
 	1    7050 9400
 	0    -1   -1   0   
@@ -497,7 +497,7 @@ U 1 1 5E1FAEC4
 P 7050 9500
 F 0 "TP4" V 7050 9900 50  0000 C CNN
 F 1 "cbsel1" V 7050 10150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7250 9500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7250 9500 50  0001 C CNN
 F 3 "~" H 7250 9500 50  0001 C CNN
 	1    7050 9500
 	0    -1   -1   0   
@@ -614,7 +614,7 @@ F 3 "" H 5150 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 1150 5150 1150
+	4850 1150 5050 1150
 Connection ~ 4850 1150
 Text Notes 5250 1100 0    50   ~ 0
 1.2v @ 300mA
@@ -708,7 +708,7 @@ F 3 "" H 4850 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 2250 5150 2250
+	4850 2250 5050 2250
 Connection ~ 4850 2250
 Text Notes 5250 2200 0    50   ~ 0
 3.3v @ 300mA
@@ -1091,21 +1091,21 @@ Text Label 13150 5550 0    50   ~ 0
 p1_9
 Text Label 13150 5650 0    50   ~ 0
 p1_10
-Text Label 9150 4100 2    50   ~ 0
-p1_1
-Text Label 9150 4200 2    50   ~ 0
-p1_2
-Text Label 9150 4300 2    50   ~ 0
-p1_3
-Text Label 9150 4400 2    50   ~ 0
-p1_4
-Text Label 9150 4500 2    50   ~ 0
-p1_7
-Text Label 9150 4600 2    50   ~ 0
-p1_8
-Text Label 9150 4700 2    50   ~ 0
-p1_9
 Text Label 9150 4800 2    50   ~ 0
+p1_1
+Text Label 9150 4700 2    50   ~ 0
+p1_2
+Text Label 9150 4600 2    50   ~ 0
+p1_3
+Text Label 9150 4500 2    50   ~ 0
+p1_4
+Text Label 9150 4400 2    50   ~ 0
+p1_7
+Text Label 9150 4300 2    50   ~ 0
+p1_8
+Text Label 9150 4200 2    50   ~ 0
+p1_9
+Text Label 9150 4100 2    50   ~ 0
 p1_10
 $Comp
 L power:+3.3V #PWR0148
@@ -1178,21 +1178,21 @@ Text Label 13150 6450 0    50   ~ 0
 p2_9
 Text Label 13150 6550 0    50   ~ 0
 p2_10
-Text Label 9150 4900 2    50   ~ 0
-p2_1
-Text Label 9150 5000 2    50   ~ 0
-p2_2
-Text Label 9150 5100 2    50   ~ 0
-p2_3
-Text Label 9150 5200 2    50   ~ 0
-p2_4
-Text Label 9150 5300 2    50   ~ 0
-p2_7
-Text Label 9150 5400 2    50   ~ 0
-p2_8
-Text Label 9150 5500 2    50   ~ 0
-p2_9
 Text Label 9150 5600 2    50   ~ 0
+p2_1
+Text Label 9150 5500 2    50   ~ 0
+p2_2
+Text Label 9150 5400 2    50   ~ 0
+p2_3
+Text Label 9150 5300 2    50   ~ 0
+p2_4
+Text Label 9150 5200 2    50   ~ 0
+p2_7
+Text Label 9150 5100 2    50   ~ 0
+p2_8
+Text Label 9150 5000 2    50   ~ 0
+p2_9
+Text Label 9150 4900 2    50   ~ 0
 p2_10
 NoConn ~ 9150 5700
 NoConn ~ 9150 5800
@@ -1227,7 +1227,7 @@ L power:PWR_FLAG #FLG0104
 U 1 1 5E634BD2
 P 3500 1450
 F 0 "#FLG0104" H 3500 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 3500 1623 50  0000 C CNN
+F 1 "PWR_FLAG" H 3500 1623 50  0001 C CNN
 F 2 "" H 3500 1450 50  0001 C CNN
 F 3 "~" H 3500 1450 50  0001 C CNN
 	1    3500 1450
@@ -1239,17 +1239,17 @@ Connection ~ 3750 1450
 $Comp
 L power:PWR_FLAG #FLG0105
 U 1 1 5E63838B
-P 10700 1500
-F 0 "#FLG0105" H 10700 1575 50  0001 C CNN
-F 1 "PWR_FLAG" H 10700 1673 50  0000 C CNN
-F 2 "" H 10700 1500 50  0001 C CNN
-F 3 "~" H 10700 1500 50  0001 C CNN
-	1    10700 1500
+P 10700 1550
+F 0 "#FLG0105" H 10700 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 10700 1950 50  0001 C CNN
+F 2 "" H 10700 1550 50  0001 C CNN
+F 3 "~" H 10700 1550 50  0001 C CNN
+	1    10700 1550
 	0    -1   -1   0   
 $EndComp
-Connection ~ 10700 1500
+Connection ~ 10700 1550
 Wire Wire Line
-	10700 1500 10700 1650
+	10700 1550 10700 1650
 $Comp
 L power:GND #PWR0152
 U 1 1 5E6392F1
@@ -1909,70 +1909,8 @@ Text Label 12650 7350 2    50   ~ 0
 p3_3
 Text Label 12650 7450 2    50   ~ 0
 p3_4
-Text Label 9250 7250 2    50   ~ 0
-p3_1
-Text Label 9250 7350 2    50   ~ 0
-p3_2
-Text Label 9250 7450 2    50   ~ 0
-p3_3
-Text Label 9250 7550 2    50   ~ 0
-p3_4
-Text Label 9250 7650 2    50   ~ 0
-p3_7
-Text Label 9250 7750 2    50   ~ 0
-p3_8
-Text Label 9250 7850 2    50   ~ 0
-p3_9
 Text Label 9250 7950 2    50   ~ 0
-p3_10
-Text Label 9250 8050 2    50   ~ 0
 p4_1
-Text Label 9250 8150 2    50   ~ 0
-p4_2
-Text Label 9250 8250 2    50   ~ 0
-p4_3
-Text Label 9250 8350 2    50   ~ 0
-p4_4
-Text Label 9250 8450 2    50   ~ 0
-p4_7
-Text Label 9250 8550 2    50   ~ 0
-p4_8
-Text Label 9250 8650 2    50   ~ 0
-p4_9
-Text Label 9250 8750 2    50   ~ 0
-p4_10
-Text Label 7150 4550 2    50   ~ 0
-p5_1
-Text Label 7150 4650 2    50   ~ 0
-p5_2
-Text Label 7150 4750 2    50   ~ 0
-p5_3
-Text Label 7150 4850 2    50   ~ 0
-p5_4
-Text Label 7150 4950 2    50   ~ 0
-p5_7
-Text Label 7150 5050 2    50   ~ 0
-p5_8
-Text Label 7150 5150 2    50   ~ 0
-p5_9
-Text Label 7150 5250 2    50   ~ 0
-p5_10
-Text Label 7150 5450 2    50   ~ 0
-p6_1
-Text Label 7150 5550 2    50   ~ 0
-p6_2
-Text Label 7150 5650 2    50   ~ 0
-p6_3
-Text Label 7150 5750 2    50   ~ 0
-p6_4
-Text Label 7150 5850 2    50   ~ 0
-p6_7
-Text Label 7150 5950 2    50   ~ 0
-p6_8
-Text Label 7150 6050 2    50   ~ 0
-p6_9
-Text Label 7150 6150 2    50   ~ 0
-p6_10
 Text Notes 1850 6700 0    50   ~ 0
 16Mb FLASH supports 0Bh fast read
 Connection ~ 2500 9650
@@ -2037,7 +1975,7 @@ L power:PWR_FLAG #FLG0101
 U 1 1 5E0E5408
 P 10900 1400
 F 0 "#FLG0101" H 10900 1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 10900 1700 50  0000 C CNN
+F 1 "PWR_FLAG" H 10900 1700 50  0001 C CNN
 F 2 "" H 10900 1400 50  0001 C CNN
 F 3 "~" H 10900 1400 50  0001 C CNN
 	1    10900 1400
@@ -2051,7 +1989,7 @@ L power:PWR_FLAG #FLG0102
 U 1 1 5E0E639F
 P 13250 1650
 F 0 "#FLG0102" H 13250 1725 50  0001 C CNN
-F 1 "PWR_FLAG" H 13250 1950 50  0000 C CNN
+F 1 "PWR_FLAG" H 13250 1950 50  0001 C CNN
 F 2 "" H 13250 1650 50  0001 C CNN
 F 3 "~" H 13250 1650 50  0001 C CNN
 	1    13250 1650
@@ -2060,4 +1998,211 @@ $EndComp
 Connection ~ 13250 1650
 Text Notes 13650 1250 0    50   ~ 0
 external PLL ground connection (GNDPLL) must\nNOT be connected to the board’s ground.
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E0B6BAD
+P 14350 1800
+F 0 "H1" V 14587 1803 50  0000 C CNN
+F 1 "MountingHole_Pad" V 14496 1803 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14350 1800 50  0001 C CNN
+F 3 "~" H 14350 1800 50  0001 C CNN
+	1    14350 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E0BC3FB
+P 14350 2100
+F 0 "H2" V 14587 2103 50  0000 C CNN
+F 1 "MountingHole_Pad" V 14496 2103 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14350 2100 50  0001 C CNN
+F 3 "~" H 14350 2100 50  0001 C CNN
+	1    14350 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E0BCACF
+P 14350 2350
+F 0 "H3" V 14587 2353 50  0000 C CNN
+F 1 "MountingHole_Pad" V 14496 2353 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14350 2350 50  0001 C CNN
+F 3 "~" H 14350 2350 50  0001 C CNN
+	1    14350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E0BD11E
+P 14350 2600
+F 0 "H4" V 14587 2603 50  0000 C CNN
+F 1 "MountingHole_Pad" V 14496 2603 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 14350 2600 50  0001 C CNN
+F 3 "~" H 14350 2600 50  0001 C CNN
+	1    14350 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5E0C20C9
+P 14450 1800
+F 0 "#PWR0167" H 14450 1550 50  0001 C CNN
+F 1 "GND" H 14455 1627 50  0000 C CNN
+F 2 "" H 14450 1800 50  0001 C CNN
+F 3 "" H 14450 1800 50  0001 C CNN
+	1    14450 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 5E0C387F
+P 14450 2100
+F 0 "#PWR0168" H 14450 1850 50  0001 C CNN
+F 1 "GND" H 14455 1927 50  0000 C CNN
+F 2 "" H 14450 2100 50  0001 C CNN
+F 3 "" H 14450 2100 50  0001 C CNN
+	1    14450 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 5E0C3B91
+P 14450 2350
+F 0 "#PWR0169" H 14450 2100 50  0001 C CNN
+F 1 "GND" H 14455 2177 50  0000 C CNN
+F 2 "" H 14450 2350 50  0001 C CNN
+F 3 "" H 14450 2350 50  0001 C CNN
+	1    14450 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 5E0C3EF1
+P 14450 2600
+F 0 "#PWR0170" H 14450 2350 50  0001 C CNN
+F 1 "GND" H 14455 2427 50  0000 C CNN
+F 2 "" H 14450 2600 50  0001 C CNN
+F 3 "" H 14450 2600 50  0001 C CNN
+	1    14450 2600
+	0    -1   -1   0   
+$EndComp
+Text Label 7150 4550 2    50   ~ 0
+p6_10
+Text Label 7150 4650 2    50   ~ 0
+p6_9
+Text Label 7150 4750 2    50   ~ 0
+p6_8
+Text Label 7150 4850 2    50   ~ 0
+p6_7
+Text Label 7150 4950 2    50   ~ 0
+p6_4
+Text Label 7150 5050 2    50   ~ 0
+p6_3
+Text Label 7150 5150 2    50   ~ 0
+p6_2
+Text Label 7150 5250 2    50   ~ 0
+p6_1
+Text Label 7150 5450 2    50   ~ 0
+p5_10
+Text Label 7150 5550 2    50   ~ 0
+p5_9
+Text Label 7150 5650 2    50   ~ 0
+p5_8
+Text Label 7150 5750 2    50   ~ 0
+p5_7
+Text Label 7150 5850 2    50   ~ 0
+p5_4
+Text Label 7150 5950 2    50   ~ 0
+p5_3
+Text Label 7150 6050 2    50   ~ 0
+p5_2
+Text Label 7150 6150 2    50   ~ 0
+p5_1
+Text Label 9250 8050 2    50   ~ 0
+p3_10
+Text Label 9250 8150 2    50   ~ 0
+p3_9
+Text Label 9250 8250 2    50   ~ 0
+p3_8
+Text Label 9250 8350 2    50   ~ 0
+p3_7
+Text Label 9250 8450 2    50   ~ 0
+p3_4
+Text Label 9250 8550 2    50   ~ 0
+p3_3
+Text Label 9250 8650 2    50   ~ 0
+p3_2
+Text Label 9250 8750 2    50   ~ 0
+p3_1
+Text Label 9250 7250 2    50   ~ 0
+p4_10
+Text Label 9250 7350 2    50   ~ 0
+p4_9
+Text Label 9250 7450 2    50   ~ 0
+p4_8
+Text Label 9250 7550 2    50   ~ 0
+p4_7
+Text Label 9250 7650 2    50   ~ 0
+p4_4
+Text Label 9250 7750 2    50   ~ 0
+p4_3
+Text Label 9250 7850 2    50   ~ 0
+p4_2
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5E28F0E6
+P 1650 3850
+F 0 "TP5" V 1650 4250 50  0000 C CNN
+F 1 "clock" V 1650 4500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1850 3850 50  0001 C CNN
+F 3 "~" H 1850 3850 50  0001 C CNN
+	1    1650 3850
+	0    -1   -1   0   
+$EndComp
+Text Label 1650 3850 0    50   ~ 0
+clock
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5E295799
+P 5050 2250
+F 0 "TP7" V 5050 2650 50  0000 C CNN
+F 1 "3.3v" V 5050 2900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5250 2250 50  0001 C CNN
+F 3 "~" H 5250 2250 50  0001 C CNN
+	1    5050 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2250 5150 2250
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5E29AAC7
+P 5050 1150
+F 0 "TP6" V 5050 1550 50  0000 C CNN
+F 1 "1.2v" V 5050 1800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5250 1150 50  0001 C CNN
+F 3 "~" H 5250 1150 50  0001 C CNN
+	1    5050 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 1150
+Wire Wire Line
+	5050 1150 5150 1150
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5E29BEFF
+P 10600 1400
+F 0 "TP8" V 10600 1800 50  0000 C CNN
+F 1 "2.5v" V 10600 2050 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10800 1400 50  0001 C CNN
+F 3 "~" H 10800 1400 50  0001 C CNN
+	1    10600 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 1400 10600 1450
+Wire Wire Line
+	10600 1450 10700 1450
+Connection ~ 10700 1450
 $EndSCHEMATC

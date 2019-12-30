@@ -18,7 +18,14 @@
 
 # Todo
 
+## Schematic
+
 * double check FPGA pinout against lattice docs 
+* wrong part for pmod pin ordering
+
+## Layout
+
+* update wrong pmods
 
 # Inspiration
 
