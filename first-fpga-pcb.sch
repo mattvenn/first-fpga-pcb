@@ -1272,8 +1272,8 @@ Peripherals
 Text Notes 5250 3550 0    197  Italic 39
 FPGA
 Connection ~ 2450 8000
-Text Notes 1500 10450 0    50   ~ 0
-icestick pull ups on sck and ss\nicebreaker pullups on all\nolimex pullups on ss. sdi & sdo joined with 22r
+Text Notes 1250 10400 0    50   ~ 0
+pullup on ss means configure as SPI master to read configuration from FLASH at boot
 Connection ~ 1800 8850
 Connection ~ 1900 8850
 Wire Wire Line
