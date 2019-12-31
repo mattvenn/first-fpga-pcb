@@ -14,20 +14,6 @@
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
 * 16MB FLASH IS25LP016D-JBLE
 
-# Questions
-
-*
-
-# Todo
-
-## Schematic
-
-* add pi programming header
-
-## Layout
-
-* add pi programming header
-
 # Inspiration
 
 * https://github.com/OLIMEX/iCE40HX1K-EVB/blob/master/iCE40HX1K-EVB_Rev_B.pdf
