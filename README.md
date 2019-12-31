@@ -4,9 +4,11 @@
 * keep it super simple and cheap
 * program FLASH or direct with a Raspberry Pi
 
+![board](board.png)
+
 # BOM
 
-* FPGA iCE40-HX1K-TQ144 (100pin doesn't have a PLL)
+* FPGA iCE40-HX4K-TQ144
 * 3.3v reg TLV73333PDBVT
 * 1.2v reg TLV73312PDBVT
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
@@ -14,18 +16,17 @@
 
 # Questions
 
-* clock and reset gbin, will PLL be ok? Have been confused with not being able to use some pins as clock pins before
+*
 
 # Todo
 
 ## Schematic
 
-* double check FPGA pinout against lattice docs 
-* wrong part for pmod pin ordering
+* add pi programming header
 
 ## Layout
 
-* update wrong pmods
+* add pi programming header
 
 # Inspiration
 
