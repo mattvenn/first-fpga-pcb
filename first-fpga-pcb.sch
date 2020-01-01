@@ -2368,7 +2368,7 @@ U 1 1 5E102CAE
 P 4300 4750
 F 0 "J9" H 4350 5867 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 4350 5776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 4300 4750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4300 4750 50  0001 C CNN
 F 3 "~" H 4300 4750 50  0001 C CNN
 	1    4300 4750
 	1    0    0    -1  
