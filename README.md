@@ -4,7 +4,7 @@
 * keep it super simple and cheap
 * program FLASH or direct with a Raspberry Pi
 
-![board](board.png)
+![board](hardware/board.png)
 
 # BOM
 
