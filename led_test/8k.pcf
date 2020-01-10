@@ -1,0 +1,5 @@
+set_io sw1      37
+set_io sw2      38
+set_io led1     39
+set_io led2     41
+set_io clk      49
