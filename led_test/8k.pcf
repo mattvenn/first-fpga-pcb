@@ -27,6 +27,10 @@ set_io -nowarn pmod5_1  105
 # extra pins for qspi
 set_io -nowarn sd_io2   61
 set_io -nowarn sd_io3   62
+set_io -nowarn sd_cs    71
+set_io -nowarn sd_sck   70
+set_io -nowarn sd_sdi   68
+set_io -nowarn sd_sdo   67
 
 set_io -nowarn pmod1_10 110
 set_io -nowarn pmod1_4  112
