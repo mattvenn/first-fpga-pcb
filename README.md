@@ -8,6 +8,8 @@
 
 [schematic](hardware/schematic.pdf)
 
+[OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
+
 # BOM
 
 * FPGA iCE40-HX4K-TQ144 (8k accessible with Icestorm tools)
