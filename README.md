@@ -14,6 +14,19 @@
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
 * 16MB FLASH IS25LP016D-JBLE
 
+# Test
+
+See the [test program](led_test/top.v). This flashes LED2, and LED1 is connected to SW1.
+
+    make prog
+
+Yosys and NextPNR are used to create the bitstream and then it's copied to the Raspberry Pi specified
+by PI_ADDR. 
+
+[Fomu-Flash](https://github.com/mattvenn/fomu-flash) is used for programming. Fomu-Flash should be able
+to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in my
+fork.
+
 # Inspiration
 
 * https://github.com/OLIMEX/iCE40HX1K-EVB/blob/master/iCE40HX1K-EVB_Rev_B.pdf

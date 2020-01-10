@@ -13,6 +13,6 @@ module top (
 
     assign led2 = counter[22];
 
-    assign led2 = sw2;
+    assign led1 = sw1;
 
 endmodule
