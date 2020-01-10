@@ -1,14 +1,13 @@
 # Aim
 
-* make my first PCB with FPGA
-* keep it super simple and cheap
-* program FLASH or direct with a Raspberry Pi
+* Make my first PCB with an FPGA
+* Keep it super simple and cheap
+* Configured by on-board FLASH or direct with a Raspberry Pi
 
 ![board](hardware/board.png)
 
-[schematic](hardware/schematic.pdf)
-
-[OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
+* [schematic](hardware/schematic.pdf)
+* [OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
 
 # BOM
 
