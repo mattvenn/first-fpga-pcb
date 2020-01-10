@@ -228,7 +228,7 @@ F 1 "SiT2001B" H 2244 4555 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2100 3950 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2581495.pdf?_ga=2.117585545.1437906943.1577705103-1456622639.1577384340" H 1800 4600 50  0001 C CNN
 	1    1900 4600
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Text Label 2200 4600 0    50   ~ 0
 clock
@@ -2511,4 +2511,6 @@ Text Label 950  9150 3    50   ~ 0
 sd_io3
 Text Label 1050 9150 3    50   ~ 0
 sd_io2
+Text Notes 3000 5700 0    50   ~ 0
+Raspberry Pins\ncreset gpio 24\ncdone gpio 25\n\nsclk gpio 11\nmosi gpio 10\nmiso gpio 9\nsd_cs CE0 gpio 8
 $EndSCHEMATC
