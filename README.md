@@ -6,6 +6,8 @@
 
 ![board](hardware/board.png)
 
+[schematic](hardware/schematic.pdf)
+
 # BOM
 
 * FPGA iCE40-HX4K-TQ144 (8k accessible with Icestorm tools)
