@@ -1,3 +1,6 @@
 [submodule "KiCad-Schematic-Symbol-Libraries"]
 	path = KiCad-Schematic-Symbol-Libraries
 	url = git@github.com:xesscorp/KiCad-Schematic-Symbol-Libraries.git
+[submodule "fomu-flash"]
+	path = fomu-flash
+	url = git@github.com:mattvenn/fomu-flash.git
