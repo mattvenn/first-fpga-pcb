@@ -1,5 +1,65 @@
-set_io sw1      37
-set_io sw2      38
-set_io led1     39
-set_io led2     41
-set_io clk      49
+set_io -nowarn sw1      37
+set_io -nowarn sw2      38
+set_io -nowarn led1     39
+set_io -nowarn led2     41
+set_io -nowarn clk      49
+
+set_io -nowarn pmod6_10 78
+set_io -nowarn pmod6_4  79
+set_io -nowarn pmod6_9  80
+set_io -nowarn pmod6_3  81
+set_io -nowarn pmod6_8  82
+set_io -nowarn pmod6_2  83
+set_io -nowarn pmod6_7  84
+set_io -nowarn pmod6_1  85
+
+set_io -nowarn gbin3    93
+
+set_io -nowarn pmod5_10 96
+set_io -nowarn pmod5_4  97
+set_io -nowarn pmod5_9  98
+set_io -nowarn pmod5_3  99
+set_io -nowarn pmod5_8  101
+set_io -nowarn pmod5_2  102
+set_io -nowarn pmod5_7  104
+set_io -nowarn pmod5_1  105
+
+# extra pins for qspi
+set_io -nowarn sd_io2   61
+set_io -nowarn sd_io3   62
+
+set_io -nowarn pmod1_10 110
+set_io -nowarn pmod1_4  112
+set_io -nowarn pmod1_9  113
+set_io -nowarn pmod1_3  114
+set_io -nowarn pmod1_8  115
+set_io -nowarn pmod1_2  116
+set_io -nowarn pmod1_7  117
+set_io -nowarn pmod1_1  118
+
+set_io -nowarn pmod2_10 136
+set_io -nowarn pmod2_4  137
+set_io -nowarn pmod2_9  138
+set_io -nowarn pmod2_3  139
+set_io -nowarn pmod2_8  141
+set_io -nowarn pmod2_2  142
+set_io -nowarn pmod2_7  143
+set_io -nowarn pmod2_1  144
+
+set_io -nowarn pmod4_10 1
+set_io -nowarn pmod4_4  2
+set_io -nowarn pmod4_9  3
+set_io -nowarn pmod4_3  4
+set_io -nowarn pmod4_8  7
+set_io -nowarn pmod4_2  8
+set_io -nowarn pmod4_7  9
+set_io -nowarn pmod4_1  10
+
+set_io -nowarn pmod3_10 25
+set_io -nowarn pmod3_4  26
+set_io -nowarn pmod3_9  28
+set_io -nowarn pmod3_3  29
+set_io -nowarn pmod3_8  31
+set_io -nowarn pmod3_2  32
+set_io -nowarn pmod3_7  33
+set_io -nowarn pmod3_1  34
