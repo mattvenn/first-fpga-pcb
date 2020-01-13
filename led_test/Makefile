@@ -10,7 +10,7 @@ FOMU_FLASH = ~/fomu-flash/fomu-flash
 all: $(PROJECT).bin $(PROJECT).rpt 
 
 BUILD_DIR = ./
-SOURCES = top.v
+SOURCES = top.v pll.v
 
 # $@ The file name of the target of the rule.rule
 # $< first pre requisite

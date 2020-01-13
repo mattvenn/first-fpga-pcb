@@ -4,7 +4,7 @@ module top (
     input sw1,
     input sw2,
     output led1,
-    output led2,
+    output reg led2,
 
     output  pmod1_10,
     output  pmod1_4,
@@ -17,11 +17,19 @@ module top (
 
     );
 
-    reg [22:0] counter = 0;
-    always @(posedge clk)
-        counter <= counter + 1;
+    wire clk60;
+    initial led2 = 0;
+    pll pll_0(.clock_in(clk), .clock_out(clk60));
 
-    assign led2 = counter[22];
+    // use 60MHz PLL to flash led once per second
+    reg [25:0] counter = 0;
+    always @(posedge clk60) begin
+        counter <= counter + 1;
+        if(counter == 30000000) begin
+            led2 <= !led2;
+            counter <= 0;
+        end
+    end
 
     assign led1 = sw1;
 
