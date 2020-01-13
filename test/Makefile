@@ -27,10 +27,13 @@ SOURCES = top.v pll.v
 $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.asc
 	icepack $< $@
 
-prog: $(BUILD_DIR)/$(PROJECT).bin
+prog-fpga: $(BUILD_DIR)/$(PROJECT).bin
 	scp $< $(PI_ADDR):/tmp/$(PROJECT).bin
-	# -f writes to fpga directly, -w to the flash, and then needs a -r to reset it 
 	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -f /tmp/$(PROJECT).bin"
+
+prog-flash: $(BUILD_DIR)/$(PROJECT).bin
+	scp $< $(PI_ADDR):/tmp/$(PROJECT).bin
+	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJECT).bin; sudo $(FOMU_FLASH) -r"
 
 clean:
 	rm -f ${PROJECT}.json ${PROJECT}.asc ${PROJECT}.bin *log

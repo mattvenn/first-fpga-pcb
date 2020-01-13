@@ -31,12 +31,12 @@
 
 # Test
 
-See the [test program](led_test/top.v). This flashes LED2, and LED1 is connected to SW1.
+See the [test program](test/top.v). This flashes LED2, and LED1 is connected to SW1.
 
     make prog
 
 Yosys and NextPNR are used to create the bitstream and then it's copied to the Raspberry Pi specified
-by PI_ADDR in the [Makefile](led_test/Makefile). 
+by PI_ADDR in the [Makefile](test/Makefile). 
 
 [Fomu-Flash](https://github.com/mattvenn/fomu-flash) is used for programming. Fomu-Flash should be able
 to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in my
