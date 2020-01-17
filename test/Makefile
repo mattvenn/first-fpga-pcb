@@ -17,7 +17,7 @@ SOURCES = top.v pll.v pwm.v bram.v
 # $^ names of all preerquisites
 
 # rules for building the json
-%.json: $(SOURCES)
+%.json: $(SOURCES) gamma.hex
 	yosys -l yosys.log -p 'synth_ice40 -top top -json $(PROJECT).json' $(SOURCES)
 
 %.asc: %.json $(ICEBREAKER_PIN_DEF) 
@@ -35,10 +35,13 @@ prog-flash: $(BUILD_DIR)/$(PROJECT).bin
 	scp $< $(PI_ADDR):/tmp/$(PROJECT).bin
 	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJECT).bin; sudo $(FOMU_FLASH) -r"
 
-debug:
+debug: gamma.hex
 	iverilog -o test.out top.v top_tb.v pwm.v bram.v -DDEBUG
 	vvp test.out -fst
 	gtkwave test.vcd test.gtkw
+
+gamma.hex:
+	python3 gamma.py   
 
 clean:
 	rm -f ${PROJECT}.json ${PROJECT}.asc ${PROJECT}.bin *log
