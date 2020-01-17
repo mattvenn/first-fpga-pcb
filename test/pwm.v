@@ -1,6 +1,7 @@
 `default_nettype none
 module pwm #(
-    parameter WIDTH = 8
+    parameter WIDTH = 8,
+    parameter INVERT = 0
     ) (
     input wire clk,
     output wire pwm,
@@ -12,6 +13,6 @@ module pwm #(
     always @(posedge clk)
         count <= count + 1;
     
-    assign pwm = count < level;
+    assign pwm = INVERT == 0 ? count < level: ~(count < level);
 
 endmodule

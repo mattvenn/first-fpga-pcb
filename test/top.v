@@ -21,6 +21,8 @@ module top (
     localparam PWM_WIDTH = 8;
     localparam MAX_PWM = 2 ** PWM_WIDTH - 1;
     reg [PWM_WIDTH:0] pwm_counter = 0;
+    wire [PWM_WIDTH-1:0] corrected_pwm_level;
+    assign led1 = sw1;
 
 `ifndef DEBUG
     pll pll_0(.clock_in(clk), .clock_out(clk60));
@@ -40,10 +42,15 @@ module top (
         end
     end
 
-    // turn saw into triangle and feed to pwm module
+    // turn saw into triangle
     wire [PWM_WIDTH-1:0] pwm_level = pwm_counter > MAX_PWM ? MAX_PWM - pwm_counter : pwm_counter;
-    pwm #(.WIDTH(PWM_WIDTH)) pwm_0(.clk(clk60), .level(pwm_level), .pwm(led2));
-    assign led1 = sw1;
+
+    // gamma correction LUT
+    bram #(.ADDR_W(8), .DATA_W(8), .FILE("gamma.hex")) gamma_LUT (.r_clk(clk60), .r_addr(pwm_level), .r_data(corrected_pwm_level), .r_en(1'b1));
+
+    // led is low to light, so invert PWM
+    pwm #(.WIDTH(PWM_WIDTH), .INVERT(1'b1)) pwm_0(.clk(clk60), .level(corrected_pwm_level), .pwm(led2));
+
 
     // put the counter out on one of the pmods
     assign  pmod1_10 = counter[10];

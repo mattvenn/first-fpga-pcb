@@ -10,7 +10,7 @@ FOMU_FLASH = ~/fomu-flash/fomu-flash
 all: $(PROJECT).bin
 
 BUILD_DIR = ./
-SOURCES = top.v pll.v pwm.v
+SOURCES = top.v pll.v pwm.v bram.v
 
 # $@ The file name of the target of the rule.rule
 # $< first pre requisite
@@ -36,7 +36,7 @@ prog-flash: $(BUILD_DIR)/$(PROJECT).bin
 	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJECT).bin; sudo $(FOMU_FLASH) -r"
 
 debug:
-	iverilog -o test.out top.v top_tb.v pwm.v -DDEBUG
+	iverilog -o test.out top.v top_tb.v pwm.v bram.v -DDEBUG
 	vvp test.out -fst
 	gtkwave test.vcd test.gtkw
 
