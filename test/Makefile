@@ -7,10 +7,10 @@ PROJECT = led_sw
 PI_ADDR = pi@fpga.local
 FOMU_FLASH = ~/fomu-flash/fomu-flash
 
-all: $(PROJECT).bin $(PROJECT).rpt 
+all: $(PROJECT).bin
 
 BUILD_DIR = ./
-SOURCES = top.v pll.v
+SOURCES = top.v pll.v pwm.v
 
 # $@ The file name of the target of the rule.rule
 # $< first pre requisite
@@ -35,9 +35,14 @@ prog-flash: $(BUILD_DIR)/$(PROJECT).bin
 	scp $< $(PI_ADDR):/tmp/$(PROJECT).bin
 	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJECT).bin; sudo $(FOMU_FLASH) -r"
 
+debug:
+	iverilog -o test.out top.v top_tb.v pwm.v -DDEBUG
+	vvp test.out -fst
+	gtkwave test.vcd test.gtkw
+
 clean:
 	rm -f ${PROJECT}.json ${PROJECT}.asc ${PROJECT}.bin *log
 
 #secondary needed or make will remove useful intermediate files
 .SECONDARY:
-.PHONY: all prog clean
+.PHONY: all prog-flash prog-fpga clean

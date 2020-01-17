@@ -4,7 +4,7 @@ module top (
     input sw1,
     input sw2,
     output led1,
-    output reg led2,
+    output led2,
 
     output  pmod1_10,
     output  pmod1_4,
@@ -18,21 +18,34 @@ module top (
     );
 
     wire clk60;
-    initial led2 = 0;
-    pll pll_0(.clock_in(clk), .clock_out(clk60));
+    localparam PWM_WIDTH = 8;
+    localparam MAX_PWM = 2 ** PWM_WIDTH - 1;
+    reg [PWM_WIDTH:0] pwm_counter = 0;
 
-    // use 60MHz PLL to flash led once per second
+`ifndef DEBUG
+    pll pll_0(.clock_in(clk), .clock_out(clk60));
+    localparam MAX_COUNT = 300000;
+`else
+    assign clk60 = clk;
+    localparam MAX_COUNT = 10;
+`endif
+
+    // use 60MHz PLL to pulse LED
     reg [25:0] counter = 0;
     always @(posedge clk60) begin
         counter <= counter + 1;
-        if(counter == 30000000) begin
-            led2 <= !led2;
+        if(counter == MAX_COUNT) begin
             counter <= 0;
+            pwm_counter <= pwm_counter + 1;
         end
     end
 
+    // turn saw into triangle and feed to pwm module
+    wire [PWM_WIDTH-1:0] pwm_level = pwm_counter > MAX_PWM ? MAX_PWM - pwm_counter : pwm_counter;
+    pwm #(.WIDTH(PWM_WIDTH)) pwm_0(.clk(clk60), .level(pwm_level), .pwm(led2));
     assign led1 = sw1;
 
+    // put the counter out on one of the pmods
     assign  pmod1_10 = counter[10];
     assign  pmod1_4  = counter[11];
     assign  pmod1_9  = counter[12];

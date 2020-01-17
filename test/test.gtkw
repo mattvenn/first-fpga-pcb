@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Jan 17 14:45:43 2020
+[*]
+[dumpfile] "/home/matt/work/first-fpga-pcb/test/test.vcd"
+[dumpfile_mtime] "Fri Jan 17 14:45:37 2020"
+[dumpfile_size] 2959
+[savefile] "/home/matt/work/first-fpga-pcb/test/test.gtkw"
+[timestart] 0
+[size] 2146 899
+[pos] -1 -1
+*-12.046980 1201 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test.
+[treeopen] test.top_0.
+[sst_width] 263
+[signals_width] 496
+[sst_expanded] 1
+[sst_vpaned_height] 250
+@28
+test.clk
+test.top_0.clk60
+@22
+test.top_0.counter[25:0]
+@28
+test.top_0.led2
+@22
+test.top_0.pwm_0.count[7:0]
+@8023
+test.top_0.pwm_0.level[7:0]
+@28
+test.top_0.pwm_0.pwm
+[pattern_trace] 1
+[pattern_trace] 0
