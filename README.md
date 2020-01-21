@@ -42,6 +42,14 @@ by PI_ADDR in the [Makefile](test/Makefile).
 to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in my
 fork.
 
+# Todo
+
+* better silk label for header
+* connect a few pins between Pi & FPGA
+* breakout all Pi pins
+* shrink board in y axis slightly for even holes
+* check physical for big pi4 connection
+
 # Inspiration
 
 * https://github.com/OLIMEX/iCE40HX1K-EVB/blob/master/iCE40HX1K-EVB_Rev_B.pdf
