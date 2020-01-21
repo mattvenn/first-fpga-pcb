@@ -23,6 +23,9 @@ SOURCES = top.v pll.v pwm.v bram.v
 %.asc: %.json $(ICEBREAKER_PIN_DEF) 
 	nextpnr-ice40 -l nextpnr.log --seed $(SEED) --freq 20 --package $(PACKAGE) --$(DEVICE) --asc $@ --pcf $(PIN_DEF) --json $<
 
+gui: $(PROJECT).json $(ICEBREAKER_PIN_DEF) 
+	nextpnr-ice40 --gui -l nextpnr.log --seed $(SEED) --freq 20 --package $(PACKAGE) --$(DEVICE) --asc $(PROJECT).asc --pcf $(PIN_DEF) --json $(PROJECT).json
+
 # bin, for programming
 $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.asc
 	icepack $< $@
