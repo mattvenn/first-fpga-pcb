@@ -56,6 +56,7 @@ fork.
 * breakout all Pi pins on separate pins
 * shrink board in y axis slightly for even holes and to fit larger Pi boards
 * added some optional pullup resistors to allow an I2C connection between Pi & FPGA, broken out on pmod p3
+* used FOMU programming pins so default FOMU programming app will work
 
 # Inspiration
 
