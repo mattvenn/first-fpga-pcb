@@ -42,13 +42,20 @@ by PI_ADDR in the [Makefile](test/Makefile).
 to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in my
 fork.
 
-# Todo
+# HW V1: d9c7cdf
 
-* better silk label for header
-* connect a few pins between Pi & FPGA
-* breakout all Pi pins
-* shrink board in y axis slightly for even holes
-* check physical for big pi4 connection
+## Errata
+
+* didn't expose a 2nd CS pin so can't communicate with SPI without removing flash 
+
+# HW V2:
+
+* removed a few unnecessary pullups on SPI lines
+* connect 4 general purpose pins between Pi & FPGA
+* connect an additional CS pin for SPI comms with Pi
+* breakout all Pi pins on separate pins
+* shrink board in y axis slightly for even holes and to fit larger Pi boards
+* added some optional pullup resistors to allow an I2C connection between Pi & FPGA, broken out on pmod p3
 
 # Inspiration
 
