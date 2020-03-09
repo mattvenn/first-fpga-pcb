@@ -48,7 +48,7 @@ fork.
 
 * didn't expose a 2nd CS pin so can't communicate with SPI without removing flash 
 
-# HW V2:
+# HW V2: 444ba78
 
 * removed a few unnecessary pullups on SPI lines
 * connect 4 general purpose pins between Pi & FPGA
