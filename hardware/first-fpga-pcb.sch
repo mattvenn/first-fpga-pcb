@@ -1765,68 +1765,68 @@ NoConn ~ 7800 6250
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 5E27C155
-P 12850 5550
-F 0 "J3" H 12900 5967 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 12900 5876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 12850 5550 50  0001 C CNN
-F 3 "~" H 12850 5550 50  0001 C CNN
-	1    12850 5550
-	1    0    0    -1  
+P 12850 5650
+F 0 "J3" H 12900 6067 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 12900 5976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 12850 5650 50  0001 C CNN
+F 3 "~" H 12850 5650 50  0001 C CNN
+	1    12850 5650
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J4
 U 1 1 5E27DD4E
-P 12850 6450
-F 0 "J4" H 12900 6867 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 12900 6776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 12850 6450 50  0001 C CNN
-F 3 "~" H 12850 6450 50  0001 C CNN
-	1    12850 6450
-	1    0    0    -1  
+P 12850 6550
+F 0 "J4" H 12900 6967 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 12900 6876 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 12850 6550 50  0001 C CNN
+F 3 "~" H 12850 6550 50  0001 C CNN
+	1    12850 6550
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 5E27F1E0
-P 12850 7350
-F 0 "J5" H 12900 7767 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 12900 7676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 12850 7350 50  0001 C CNN
-F 3 "~" H 12850 7350 50  0001 C CNN
-	1    12850 7350
-	1    0    0    -1  
+P 12850 7450
+F 0 "J5" H 12900 7867 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 12900 7776 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 12850 7450 50  0001 C CNN
+F 3 "~" H 12850 7450 50  0001 C CNN
+	1    12850 7450
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J6
 U 1 1 5E280439
-P 14600 5550
-F 0 "J6" H 14650 5967 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 14650 5876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 14600 5550 50  0001 C CNN
-F 3 "~" H 14600 5550 50  0001 C CNN
-	1    14600 5550
-	1    0    0    -1  
+P 14600 5650
+F 0 "J6" H 14650 6067 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 14650 5976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14600 5650 50  0001 C CNN
+F 3 "~" H 14600 5650 50  0001 C CNN
+	1    14600 5650
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J7
 U 1 1 5E2817B5
-P 14600 6450
-F 0 "J7" H 14650 6867 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 14650 6776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 14600 6450 50  0001 C CNN
-F 3 "~" H 14600 6450 50  0001 C CNN
-	1    14600 6450
-	1    0    0    -1  
+P 14600 6550
+F 0 "J7" H 14650 6967 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 14650 6876 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14600 6550 50  0001 C CNN
+F 3 "~" H 14600 6550 50  0001 C CNN
+	1    14600 6550
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J8
 U 1 1 5E282993
-P 14600 7350
-F 0 "J8" H 14650 7767 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 14650 7676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 14600 7350 50  0001 C CNN
-F 3 "~" H 14600 7350 50  0001 C CNN
-	1    14600 7350
-	1    0    0    -1  
+P 14600 7450
+F 0 "J8" H 14650 7867 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 14650 7776 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Horizontal" H 14600 7450 50  0001 C CNN
+F 3 "~" H 14600 7450 50  0001 C CNN
+	1    14600 7450
+	1    0    0    1   
 $EndComp
 NoConn ~ 9850 4650
 NoConn ~ 9850 4750
