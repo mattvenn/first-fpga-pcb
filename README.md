@@ -16,7 +16,7 @@
 
 # PCB
 
-![board](docs/board.JPG)
+![board](hardware/board.JPG)
 
 * [Schematic](hardware/schematic.pdf)
 * [OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
