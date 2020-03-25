@@ -19,7 +19,7 @@
 ![board](hardware/board.JPG)
 
 * [Schematic](hardware/schematic.pdf)
-* [OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
+* [OHSPark project](https://oshpark.com/shared_projects/wwMxCKlp) or [Gerbers](hardware/first-fpga-pcb-2020-03-09-fab.zip)
 * Cheap, 2 layer board. Probably not so good for fast signals.
 
 # BOM
