@@ -1,32 +1,85 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Fri Jan 17 14:45:43 2020
+[*] Sun Feb  2 13:48:58 2020
 [*]
 [dumpfile] "/home/matt/work/first-fpga-pcb/test/test.vcd"
-[dumpfile_mtime] "Fri Jan 17 14:45:37 2020"
-[dumpfile_size] 2959
+[dumpfile_mtime] "Sun Feb  2 13:46:42 2020"
+[dumpfile_size] 2255
 [savefile] "/home/matt/work/first-fpga-pcb/test/test.gtkw"
 [timestart] 0
-[size] 2146 899
+[size] 1867 1018
 [pos] -1 -1
-*-12.046980 1201 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-12.000000 1961 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] test.
 [treeopen] test.top_0.
-[sst_width] 263
-[signals_width] 496
+[sst_width] 362
+[signals_width] 523
 [sst_expanded] 1
 [sst_vpaned_height] 250
 @28
 test.clk
-test.top_0.clk60
-@22
+@c08022
 test.top_0.counter[25:0]
 @28
-test.top_0.led2
-@22
-test.top_0.pwm_0.count[7:0]
-@8023
-test.top_0.pwm_0.level[7:0]
+(0)test.top_0.counter[25:0]
+(1)test.top_0.counter[25:0]
+(2)test.top_0.counter[25:0]
+(3)test.top_0.counter[25:0]
+(4)test.top_0.counter[25:0]
+(5)test.top_0.counter[25:0]
+(6)test.top_0.counter[25:0]
+(7)test.top_0.counter[25:0]
+(8)test.top_0.counter[25:0]
+(9)test.top_0.counter[25:0]
+(10)test.top_0.counter[25:0]
+(11)test.top_0.counter[25:0]
+(12)test.top_0.counter[25:0]
+(13)test.top_0.counter[25:0]
+(14)test.top_0.counter[25:0]
+(15)test.top_0.counter[25:0]
+(16)test.top_0.counter[25:0]
+(17)test.top_0.counter[25:0]
+(18)test.top_0.counter[25:0]
+(19)test.top_0.counter[25:0]
+(20)test.top_0.counter[25:0]
+(21)test.top_0.counter[25:0]
+(22)test.top_0.counter[25:0]
+(23)test.top_0.counter[25:0]
+(24)test.top_0.counter[25:0]
+(25)test.top_0.counter[25:0]
+@1401200
+-group_end
+@20000
+-
+@808022
+test.top_0.pwm_counter[6:0]
+@28
+(0)test.top_0.pwm_counter[6:0]
+@29
+(1)test.top_0.pwm_counter[6:0]
+@28
+(2)test.top_0.pwm_counter[6:0]
+(3)test.top_0.pwm_counter[6:0]
+(4)test.top_0.pwm_counter[6:0]
+(5)test.top_0.pwm_counter[6:0]
+(6)test.top_0.pwm_counter[6:0]
+@200
+-
+@1001200
+-group_end
+@808022
+test.top_0.pwm_level[5:0]
+@28
+(0)test.top_0.pwm_level[5:0]
+(1)test.top_0.pwm_level[5:0]
+(2)test.top_0.pwm_level[5:0]
+(3)test.top_0.pwm_level[5:0]
+(4)test.top_0.pwm_level[5:0]
+(5)test.top_0.pwm_level[5:0]
+@200
+-
+@1001200
+-group_end
 @28
 test.top_0.pwm_0.pwm
 [pattern_trace] 1
