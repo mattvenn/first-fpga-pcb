@@ -3,6 +3,7 @@
 * Make my first PCB with an FPGA
 * Keep it super simple and cheap
 * Configured by on-board FLASH or direct with a Raspberry Pi
+* 6 PMODs, 2 buttons, 2 LEDs, FLASH for configuration bitstreams.
 
 # What a Lattice iCE40 FPGA needs
 
@@ -15,7 +16,7 @@
 
 # PCB
 
-![board](hardware/board.png)
+![board](hardware/board.JPG)
 
 * [Schematic](hardware/schematic.pdf)
 * [OHSPark project](https://oshpark.com/shared_projects/KnMD4ql8) or [Gerbers](hardware/first-fpga-pcb-2020-01-01-fab.zip)
@@ -31,16 +32,27 @@
 
 # Test
 
-See the [test program](test/top.v). This flashes LED2, and LED1 is connected to SW1.
+See the [test program](test/top.v). This makes a nice pulsing effect on LED2, and LED1 is the slow PWM clock.
+The buttons increase or decrease pulsing speed.
 
     make prog
 
 Yosys and NextPNR are used to create the bitstream and then it's copied to the Raspberry Pi specified
 by PI_ADDR in the [Makefile](test/Makefile). 
 
-[Fomu-Flash](https://github.com/mattvenn/fomu-flash) is used for programming. Fomu-Flash should be able
-to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in my
-fork.
+[Fomu-Flash](https://github.com/im-tomu/fomu-flash) is used to flash the SPI memory, or program the FPGA directly.
+
+# HW V2: 444ba78
+
+* removed a few unnecessary pullups on SPI lines
+* connect 4 general purpose pins between Pi & FPGA
+* connect additional CS1 pin for SPI comms with Pi
+* breakout all Pi pins on separate pins
+* shrink board in y axis slightly for even holes and to fit larger Pi boards
+* Allow an I2C connection between Pi & FPGA, broken out on pmod p3:
+    * Place optional 4k7 pullup resistors R1&R2
+    * Setup bitbanged I2C on Raspi on gpios 20 & 21
+* used FOMU programming pins so default FOMU programming app will work
 
 # HW V1: d9c7cdf
 
@@ -48,15 +60,9 @@ fork.
 
 * didn't expose a 2nd CS pin so can't communicate with SPI without removing flash 
 
-# HW V2: 444ba78
-
-* removed a few unnecessary pullups on SPI lines
-* connect 4 general purpose pins between Pi & FPGA
-* connect an additional CS pin for SPI comms with Pi
-* breakout all Pi pins on separate pins
-* shrink board in y axis slightly for even holes and to fit larger Pi boards
-* added some optional pullup resistors to allow an I2C connection between Pi & FPGA, broken out on pmod p3
-* used FOMU programming pins so default FOMU programming app will work
+My fork of [Fomu-Flash](https://github.com/mattvenn/fomu-flash) is used for programming. Fomu-Flash should be able
+to reconfigure the pins used with -g, but I couldn't get this to work, so I hard-coded the right pins in this
+fork.
 
 # Inspiration
 

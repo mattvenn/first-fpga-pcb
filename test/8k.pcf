@@ -27,10 +27,17 @@ set_io -nowarn pmod5_1  105
 # extra pins for qspi
 set_io -nowarn sd_io2   61
 set_io -nowarn sd_io3   62
-set_io -nowarn sd_cs    71
-set_io -nowarn sd_sck   70
-set_io -nowarn sd_sdi   68
-set_io -nowarn sd_sdo   67
+set_io -nowarn sd_cs    71  # connected to Raspi gpio8  (ce0)
+set_io -nowarn sd_sck   70  # connected to Raspi gp11   (clk)
+set_io -nowarn sd_sdi   68  # connected to Raspi gpio9  (miso)
+set_io -nowarn sd_sdo   67  # connected to Raspi gpio10 (mosi)
+
+# extra GPIO pins for Raspi comms
+set_io -nowarn gpio16   42  # connected to Raspi gpio16
+set_io -nowarn gpio13   43  # connected to Raspi gpio13
+set_io -nowarn gpio12   44  # connected to Raspi gpio12
+set_io -nowarn gpio6    45  # connected to Raspi gpio6
+set_io -nowarn gpio7    60  # connected to Raspi gpio7  (ce1)
 
 set_io -nowarn pmod1_10 110
 set_io -nowarn pmod1_4  112
@@ -59,9 +66,9 @@ set_io -nowarn pmod4_2  8
 set_io -nowarn pmod4_7  9
 set_io -nowarn pmod4_1  10
 
-set_io -nowarn pmod3_10 25
+set_io -nowarn pmod3_10 25 # can put a pull up on R2 for I2C. Connected to Raspi gpio21. Need to setup bitbanged I2C on Raspi on this pin.
 set_io -nowarn pmod3_4  26
-set_io -nowarn pmod3_9  28
+set_io -nowarn pmod3_9  28 # can put a pull up on R1 for I2C. Connected to Raspi gpio20. Need to setup bitbanged I2C on Raspi on this pin.
 set_io -nowarn pmod3_3  29
 set_io -nowarn pmod3_8  31
 set_io -nowarn pmod3_2  32
