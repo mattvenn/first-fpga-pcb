@@ -42,16 +42,20 @@ by PI_ADDR in the [Makefile](test/Makefile).
 
 [Fomu-Flash](https://github.com/im-tomu/fomu-flash) is used to flash the SPI memory, or program the FPGA directly.
 
+# HW V3:
+
+* fixed mistakenly removed pullups on io2/3 on SPI flash. This made the system vulnerable to noise while FPGA was reading flash.
+
 # HW V2: 444ba78
 
-* removed a few unnecessary pullups on SPI lines
+* removed a few unnecessary pullups on SPI lines - introduced a fault see HW V3.
 * connect 4 general purpose pins between Pi & FPGA
 * connect additional CS1 pin for SPI comms with Pi
 * breakout all Pi pins on separate pins
 * shrink board in y axis slightly for even holes and to fit larger Pi boards
 * Allow an I2C connection between Pi & FPGA, broken out on pmod p3:
     * Place optional 4k7 pullup resistors R1&R2
-    * Setup bitbanged I2C on Raspi on gpios 20 & 21
+    * Setup bitbanged I2C on Raspi on gpios 20 & 21 (pins 38 & 40)
 * used FOMU programming pins so default FOMU programming app will work
 
 # HW V1: d9c7cdf

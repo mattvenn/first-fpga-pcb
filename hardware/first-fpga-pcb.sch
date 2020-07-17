@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Matt-FPGA"
-Date "2019-12-30"
-Rev "0.1"
+Date "2020-07-17"
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -9536,4 +9536,46 @@ Text Notes 7100 7850 0    50   ~ 0
 some extra\npi pins
 Text Notes 7100 8750 0    50   ~ 0
 another pi\ncs pin
+$Comp
+L Device:R R3
+U 1 1 5F128578
+P 3700 7650
+F 0 "R3" V 3493 7650 50  0001 C CNN
+F 1 "10k" V 3700 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 7650 50  0001 C CNN
+F 3 "~" H 3700 7650 50  0001 C CNN
+	1    3700 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F1290BE
+P 3850 7650
+F 0 "R5" V 3643 7650 50  0001 C CNN
+F 1 "10k" V 3850 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 7650 50  0001 C CNN
+F 3 "~" H 3850 7650 50  0001 C CNN
+	1    3850 7650
+	1    0    0    -1  
+$EndComp
+Text Label 3700 7800 3    50   ~ 0
+sd_io3
+Text Label 3850 7800 3    50   ~ 0
+sd_io2
+$Comp
+L power:+3.3V #PWR0195
+U 1 1 5F12A8B7
+P 3700 7500
+F 0 "#PWR0195" H 3700 7350 50  0001 C CNN
+F 1 "+3.3V" H 3715 7673 50  0000 C CNN
+F 2 "" H 3700 7500 50  0001 C CNN
+F 3 "" H 3700 7500 50  0001 C CNN
+	1    3700 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 7500 3700 7500
+Connection ~ 3700 7500
+Text Notes 3300 8250 0    50   ~ 0
+pullups required for safe operation \nof flash
 $EndSCHEMATC
