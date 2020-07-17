@@ -42,7 +42,7 @@ by PI_ADDR in the [Makefile](test/Makefile).
 
 [Fomu-Flash](https://github.com/im-tomu/fomu-flash) is used to flash the SPI memory, or program the FPGA directly.
 
-# HW V3:
+# HW V3: bfcbcf7
 
 * fixed mistakenly removed pullups on io2/3 on SPI flash. This made the system vulnerable to noise while FPGA was reading flash.
 
