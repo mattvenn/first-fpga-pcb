@@ -5,6 +5,8 @@
 * Configured by on-board FLASH or direct with a Raspberry Pi
 * 6 PMODs, 2 buttons, 2 LEDs, FLASH for configuration bitstreams.
 
+There is also an ECP5 version of this board: https://github.com/mattvenn/first-fpga-pcb
+
 # What a Lattice iCE40 FPGA needs
 
 * A clock input. Has to be provided by an oscillator, it doesn't have a crystal driver.
