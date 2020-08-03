@@ -5,7 +5,7 @@
 * Configured by on-board FLASH or direct with a Raspberry Pi
 * 6 PMODs, 2 buttons, 2 LEDs, FLASH for configuration bitstreams.
 
-There is also an ECP5 version of this board: https://github.com/mattvenn/first-fpga-pcb
+There is also an ECP5 version of this board: https://github.com/mattvenn/basic-ecp5-pcb
 
 # What a Lattice iCE40 FPGA needs
 
